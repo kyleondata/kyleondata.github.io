@@ -1,0 +1,220 @@
+<html>
+    <head>
+        <script src='bower_components/jquery/dist/jquery.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+    </head>
+    <body>
+    <style type="text/css">
+            body{
+                background-color:#f15d58
+            }
+            #trigger1 {
+               position: absolute;
+               top:0px;
+            } 
+            .text {
+                color: #363635;
+            }
+            .heart.left, .bigStar.left{
+                    height:70px;
+                    left: 100px;
+                    position: relative;
+                    z-index:10;
+                    float:left;
+                    clear:both;
+                    margin:5px;
+                    top: 1200px;
+            }
+            .heartSmall.left, .smallStar.left {
+                position: relative;
+                height:50px;
+                left: 10%;
+                z-index:5;
+                float:left;
+                clear:both;
+                margin:5px;
+                top: 1200px;
+            }
+            .heart.right, .bigStar.right{
+                    height:70px;
+                    right: 100px;
+                    position: relative;
+                    z-index:10;
+                    float:right;
+                    clear:both;
+                    margin:5px;
+                    top: 1200px;
+            }
+            .heartSmall.right, .smallStar.right {
+                position: relative;
+                height:50px;
+                right: 10%;
+                z-index:5;
+                float:right;
+                clear:both;
+                margin:5px;
+                top: 1200px;
+            }
+            .reason {
+                width: 60%;
+                margin-right: auto;
+                margin-left: auto;
+                z-index:100;
+                padding: 35px;
+                font-size: 30px;
+                position: relative;
+                font-weight: bold;
+            }
+            .main-pic {
+                margin-left:auto;
+                margin-right:auto;
+                display:block;
+                padding: 15px;
+                width:300px;
+                margin-bottom: 525px;
+                padding-top: 180px;
+            }
+
+        </style>
+        <div style='float:left;'>
+            <img class='heartSmall left' src='/images/heart.png' />
+            <img class='heart left' src='/images/heart.png' />
+            <img class='heartSmall left' style='left: 200px;' src='/images/heart.png' />
+            
+            <img class='heartSmall left' src='/images/heart.png' />
+            <img class='heart left' src='/images/heart.png' />
+            <img class='heartSmall left' style='left: 200px;' src='/images/heart.png' />
+            
+            <img class='heartSmall left' src='/images/heart.png' />
+            <img class='heart left' src='/images/heart.png' />
+            <img class='heartSmall left' style='left: 200px;' src='/images/heart.png' />
+            
+            <img class='heartSmall left' src='/images/heart.png' />
+            <img class='heart left' src='/images/heart.png' />
+            <img class='heartSmall left' style='left: 200px;' src='/images/heart.png' />
+            
+            <img class='heartSmall left' src='/images/heart.png' />
+            <img class='heart left' src='/images/heart.png' />
+            <img class='heartSmall left' style='left: 200px;' src='/images/heart.png' />
+            
+            <img class='heartSmall left' src='/images/heart.png' />
+            <img class='heart left' src='/images/heart.png' />
+            <img class='heartSmall left' style='left: 200px;' src='/images/heart.png' />
+    
+            <img class='heartSmall left' src='/images/heart.png' />
+            <img class='heart left' src='/images/heart.png' />
+            <img class='heartSmall left' style='left: 200px;' src='/images/heart.png' />
+        
+            <img class='heartSmall left' src='/images/heart.png' />
+            <img class='heart left' src='/images/heart.png' />
+            <img class='heartSmall left' style='left: 200px;' src='/images/heart.png' />
+
+        </div>
+        <div style='float:right'>
+            <img class='heartSmall right' src='/images/heart.png' />
+            <img class='heart right' src='/images/heart.png' />
+            <img class='heartSmall right' style='right: 200px' src='/images/heart.png' />
+            
+            <img class='heartSmall right' src='/images/heart.png' />
+            <img class='heart right' src='/images/heart.png' />
+            <img class='heartSmall right' style='right: 200px' src='/images/heart.png' />
+            
+            <img class='heartSmall right' src='/images/heart.png' />
+            <img class='heart right' src='/images/heart.png' />
+            <img class='heartSmall right' style='right: 200px' src='/images/heart.png' />
+            
+            <img class='heartSmall right' src='/images/heart.png' />
+            <img class='heart right' src='/images/heart.png' />
+            <img class='heartSmall right' style='right: 200px' src='/images/heart.png' />
+            
+            <img class='heartSmall right' src='/images/heart.png' />
+            <img class='heart right' src='/images/heart.png' />
+            <img class='heartSmall right' style='right: 200px' src='/images/heart.png' />
+               
+            <img class='heartSmall right' src='/images/heart.png' />
+            <img class='heart right' src='/images/heart.png' />
+            <img class='heartSmall right' style='right: 200px' src='/images/heart.png' />
+            
+            <img class='heartSmall right' src='/images/heart.png' />
+            <img class='heart right' src='/images/heart.png' />
+            <img class='heartSmall right' style='right: 200px' src='/images/heart.png' />
+            
+            <img class='heartSmall right' src='/images/heart.png' />
+            <img class='heart right' src='/images/heart.png' />
+            <img class='heartSmall right' style='right: 200px' src='/images/heart.png' />
+            
+        </div>
+            <div id='trigger1'></div>
+            <img src='/images/KyleLovesLauren.png' class='main-pic'/>
+            <div style='margin-left:auto;margin-right:auto;width:80%;'>
+                <div class='reason text'>
+                    I love that you constantly challenge me to be a better person.
+                </div>
+                <div class='reason text'>
+                    The way you laugh with your whole body.
+                    Your entire face lights up and you do this thing where you bend forward.
+                    I love it.
+                </div>
+                <div class='reason text'>
+                    How you own your emotion. You are never afraid to show it. You allow
+                    others to see you emotionally vulnerable.
+                </div>
+                 <div class='reason text'>
+                     You allow me to not filter my silliness. You are the only person 
+                     I have ever know, that I feel like I can truely be myself.  I filter
+                     me for everyone else but you.
+                </div>
+                <div class='reason text'>
+                    The way you set me on fire when you touch my skin. It calms me down when I am upset.
+                    I melt away from your touch.
+                </div>
+                <div class='reason text'>
+                    Your sense of humor is amazing. You make me laugh constantly.  I love how it is smart
+                    and witty.  And I love that you are so quick with your humor, as if it is effortless.
+                </div>
+                <div class='reason text'>
+                    Your passion for caring for others is endless and it is infectous.  I feel that I have
+                    always been some what kind, but your kindness has been revolutionary to me.
+                </div>
+                 <div class='reason text'>
+                     When we sing loudly in the car together. Some of my favorite us moments are when we belt it
+                     to our favorite tunes.  Also I love your singing voice, it is lovely.
+                </div>
+                <div class='reason text'>
+                    When you rub your feet together under the covers, or when you rub them on me.  It is so cute and
+                    comforting.
+                </div>
+                <div class='reason text'>
+                    Your big beautiful eyes, I can get lost in them.  They are sexy. You can see kindness
+                    in them. You can tell when you are upset or happy. I love them so.
+                </div>
+                <div class='reason text'>
+                    Your intelligence. I love how smart you are and in a completely different way than I am. You are so
+                    good at literature, gramar, art, and everything else that I am not.  We are the perfect pair.
+                </div>
+                 
+            </div>
+    </body>
+</html>
+    <script>
+            var controller = new ScrollMagic.Controller();
+            var tweenReason = new TimelineMax().to('.reason', 2.5, {top: "-=500"});
+            var tween = new TimelineMax().to('.heart', 2.5, {top: "-=500"});
+            var tweenSmall = new TimelineMax().to('.heartSmall', 2.5, {top: "-=500"});
+           
+            var scene1 = new ScrollMagic.Scene({triggerElement: "#trigger1", offset: 500, druation: 300})
+                .setTween(tweenReason)
+                .addTo(controller);
+
+            var scene1 = new ScrollMagic.Scene({triggerElement: "#trigger1", offset: 650, druation: 1000})
+                .setTween(tween)
+                .addTo(controller);
+
+            var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger1", offset: 650, duration: 1000})
+                .setTween(tweenSmall)
+                .addTo(controller);
+        </script>
+
